@@ -11,3 +11,4 @@ string MetodyPomocnicze::wczytajLinie() {
     getline(cin, wejscie);
     return wejscie;
 }
+
