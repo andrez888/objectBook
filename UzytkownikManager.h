@@ -8,7 +8,7 @@
 #include <sstream>
 
 #include "Uzytkownik.h"
-#include "plikZUzytkownikami.h"
+#include "PlikZUzytkownikami.h"
 
 
 
@@ -16,13 +16,16 @@ using namespace std;
 class UzytkownikManager{
     int idZalogowanegoUzytkownika;
     vector <Uzytkownik> uzytkownicy;
+    PlikZUzytkownikami plikZUzytkownikami;
 
      Uzytkownik podajDaneNowegoUzytkownika();
      int pobierzIdNowegoUzytkownika();
      bool czyIstniejeLogin(string login);
-     plikZUzytkownikami plik;
+
 public:
+
      void rejestracjaUzytkownika();
     void wypiszWszytskichUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 };
 #endif
