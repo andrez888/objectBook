@@ -6,8 +6,6 @@ void KsiazkaAdresowa::rejestracjaUzytkownika(){
 void  KsiazkaAdresowa :: wypiszWszytskichUzytkownikow(){
     uzytkownikManager.wypiszWszytskichUzytkownikow();
 }
-KsiazkaAdresowa::KsiazkaAdresowa(){
-    uzytkownikManager.wczytajUzytkownikowZPliku();
-}
+
 
 
